@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios'>
+    <pages>
+        <page name='Toast'/>
+        <page name='Text'/>
+        <page name='NSURLSession'/>
+        <page name='Check_height_text'/>
+        <page name='ConvertRect'/>
+        <page name='Array'/>
+        <page name='Enum, Struct, Class'/>
+        <page name='CustomQueue'/>
+        <page name='Weak'/>
+        <page name='POP'/>
+        <page name='Type'/>
+        <page name='POP_2'/>
+        <page name='POP_3'/>
+        <page name='POP_example '/>
+        <page name='Generator'/>
+        <page name='Static_volume'/>
+        <page name='Dictionary+Regex'/>
+        <page name='Custom_operation'/>
+        <page name='Case_pattern'/>
+        <page name='SubStruct'/>
+        <page name='LazyVar'/>
+        <page name='Try'/>
+        <page name='CoreGraphics'/>
+        <page name='DownloadImage_with_progress'/>
+        <page name='POP_1'/>
+    </pages>
+</playground>

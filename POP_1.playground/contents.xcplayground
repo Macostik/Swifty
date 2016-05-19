@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' requires-full-environment='true' display-mode='rendered'>
+    <pages>
+        <page name='start'/>
+        <page name='generic-crash-course 1'/>
+        <page name='generic-crash-course 2'/>
+        <page name='inferred-typealiases 1'/>
+        <page name='inferred-typealiases 2'/>
+        <page name='inferred-typealiases 3'/>
+        <page name='typealias-for-self 1'/>
+        <page name='typealias-for-self 2'/>
+        <page name='typealias-for-self 3'/>
+        <page name='inheritance-and-generics 1'/>
+        <page name='inheritance-and-generics 2'/>
+        <page name='constraining-generics-using-where'/>
+        <page name='implementing-patterns 1'/>
+        <page name='implementing-patterns 2'/>
+    </pages>
+</playground>

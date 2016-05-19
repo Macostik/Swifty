@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
+    <pages>
+        <page name='start'/>
+        <page name='inheritance-and-generics'/>
+        <page name='a-typealias-as-a-return-type'/>
+        <page name='constraining-generics-using-where'/>
+        <page name='implementing-patterns 1'/>
+        <page name='implementing-patterns 2'/>
+    </pages>
+</playground>
