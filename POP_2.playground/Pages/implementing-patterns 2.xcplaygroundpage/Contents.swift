@@ -4,6 +4,7 @@
 //: [Previous](@previous)
 
 protocol Material {}
+
 struct Wood: Material {}
 struct Glass: Material {}
 struct Metal: Material {}
@@ -14,8 +15,8 @@ struct Cotton: Material {}
 protocol HouseholdThing { }
 protocol Furniture: HouseholdThing {
     init() // <=====
-    typealias M: Material
-    typealias T: HouseholdThing
+    associatedtype M: Material
+    associatedtype T: HouseholdThing
     func mainMaterial() -> M
     static func factory() -> T
 }

@@ -27,5 +27,6 @@
         <page name='DownloadImage_with_progress'/>
         <page name='POP_1'/>
         <page name='Struct_to_JSON'/>
+        <page name='Notification'/>
     </pages>
 </playground>

@@ -11,7 +11,7 @@ struct Glass: Material {}
 
 protocol HouseholdThing { }
 protocol Furniture: HouseholdThing {
-    typealias M: Material
+    associatedtype M: Material
     func mainMaterial() -> M
 }
 
