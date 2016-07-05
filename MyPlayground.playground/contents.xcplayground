@@ -28,5 +28,7 @@
         <page name='POP_1'/>
         <page name='Struct_to_JSON'/>
         <page name='Notification'/>
+        <page name='DrawContext'/>
+        <page name='POP_4'/>
     </pages>
 </playground>

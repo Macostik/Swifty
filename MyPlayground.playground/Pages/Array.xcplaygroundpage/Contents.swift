@@ -23,14 +23,19 @@ for x in 1.stride(to: 10, by: 0.1) {
 }
 
 let nilArray: [Int?] = [1, nil, 2, nil, 3, 4, nil, 5]
-
+var result: [Int] = []
 for case .Some(let x) in nilArray {
     print (">>self - \(x)<<")
+    result.append(x)
 }
+print (">>self - \(result)<<")
+result.removeAll()
 
 for case let number? in nilArray {
     print("Found a \(number)")
+    result.append(number)
 }
+print (">>self - \(result)<<")
 
 var fao1:[Int?] = [1,2,3,4,nil,6]
 
