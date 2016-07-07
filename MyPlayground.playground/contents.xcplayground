@@ -29,6 +29,7 @@
         <page name='Struct_to_JSON'/>
         <page name='Notification'/>
         <page name='DrawContext'/>
+        <page name='RealmSwift'/>
         <page name='POP_4'/>
     </pages>
 </playground>
