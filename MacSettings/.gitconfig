@@ -1,0 +1,46 @@
+[core]
+	excludesfile = /Users/Yuriy/.gitignore_global
+	editor = vim
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[user]
+	name = Yura Granchenko
+	email = yura-granchenko@yandex.ru
+[alias]
+	tree = log --oneline --decorate --all --graph
+	ck = checkout
+ 	cm = commit -m
+ 	st = status
+ 	br = branch
+ 	hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+ 	type = cat-file -t
+  	dump = cat-file -p
+	a = add .
+	sta = stash apply
+	stc = stash clear
+	stl = stash list
+	sts = stash save
+	pr = pull --rebase
+	p = push
+	rs = reset --soft HEAD~1
+	rh = reset --hard
+	update = pull -v
+	clean = clean -f -d
+[push]
+	default = simple
+[mergetool]
+	keepBackup = false
+	prompt = false
+
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
