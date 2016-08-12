@@ -1,8 +1,8 @@
 {
   "name": "Alamofire-SwiftyJSON",
-  "version": "2.0.0-beta.1",
+  "version": "3.0.0",
   "summary": "Alamofire extension for serialize NSData to SwiftyJSON",
-  "homepage": "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON",
+  "homepage": "https://github.com/jregnauld/Alamofire-SwiftyJSON",
   "license": {
     "type": "MIT"
   },
@@ -15,13 +15,12 @@
     "ios": "8.0"
   },
   "source": {
-    "git": "https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git",
-    "branch": "master"
+    "git": "https://github.com/jregnauld/Alamofire-SwiftyJSON.git",
+    "branch": "Alamofire-3.0"
   },
   "source_files": "Source/*.swift",
   "frameworks": [
     "Alamofire",
     "SwiftyJSON"
-  ],
-  "deprecated_in_favor_of": "Alamofire-SwiftyJSON version 3. Please see https://github.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/blob/master/README.md"
+  ]
 }

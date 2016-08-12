@@ -1,23 +1,23 @@
 PODS:
   - Alamofire (3.4.1)
-  - Alamofire-SwiftyJSON (2.0.0-beta.1)
+  - Alamofire-SwiftyJSON (3.0.0)
   - Realm (0.103.0):
     - Realm/Headers (= 0.103.0)
   - Realm/Headers (0.103.0)
   - RealmSwift (0.103.0):
     - Realm (= 0.103.0)
+  - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - Alamofire (from `https://github.com/Alamofire/Alamofire`)
-  - Alamofire-SwiftyJSON (from `https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire-SwiftyJSON.podspec`)
+  - Alamofire (~> 3.0)
+  - Alamofire-SwiftyJSON (from `https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec`)
   - Realm (from `http://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
   - RealmSwift (from `http://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
+  - SwiftyJSON
 
 EXTERNAL SOURCES:
-  Alamofire:
-    :git: https://github.com/Alamofire/Alamofire
   Alamofire-SwiftyJSON:
-    :podspec: https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire-SwiftyJSON.podspec
+    :podspec: https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec
   Realm:
     :branch: swift-2.0
     :git: http://github.com/realm/realm-cocoa.git
@@ -26,12 +26,9 @@ EXTERNAL SOURCES:
     :git: http://github.com/realm/realm-cocoa.git
 
 CHECKOUT OPTIONS:
-  Alamofire:
-    :commit: 0f506b1c455e5ce4312d27daeb98c10a608107d3
-    :git: https://github.com/Alamofire/Alamofire
   Alamofire-SwiftyJSON:
-    :commit: edee0486d60489807c6488e5f0d08b32c1985d92
-    :git: https://github.com/SwiftyJSON/Alamofire-SwiftyJSON.git
+    :commit: 8cb1e134b28efef6d29a8f1682acbb850b7f8630
+    :git: https://github.com/jregnauld/Alamofire-SwiftyJSON.git
   Realm:
     :commit: 4c376cfb59e2563b32be9d3cae4f0aeaff5d6271
     :git: http://github.com/realm/realm-cocoa.git
@@ -41,10 +38,11 @@ CHECKOUT OPTIONS:
 
 SPEC CHECKSUMS:
   Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
-  Alamofire-SwiftyJSON: 2fe2c7a0eef8218011c64b8ada623a8f5592196a
+  Alamofire-SwiftyJSON: 01127779f4bd2d4d5e7b41d8d37488efba0e6185
   Realm: 99c44c3a9e075638478d4134e28d9026a6de07c4
   RealmSwift: daaa1789eb581f2f8c2a05a25f463a6f70df5a5f
+  SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 1aba23c3a768a303904b4f5eebd90d59e95e4ae3
+PODFILE CHECKSUM: 401baff5b176968710d1cae314e144ef76567b1c
 
 COCOAPODS: 1.0.1

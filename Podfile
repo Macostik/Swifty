@@ -1,8 +1,9 @@
 use_frameworks!
 
 target 'AlamofirePlayground' do
-pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire'
-pod 'Alamofire-SwiftyJSON', :podspec => 'https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire-SwiftyJSON.podspec'
+pod 'Alamofire', '~> 3.0'
+pod 'SwiftyJSON'
+pod 'Alamofire-SwiftyJSON', :podspec => 'https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec'
 pod 'Realm', :git => 'http://github.com/realm/realm-cocoa.git', :branch => 'swift-2.0'
 pod 'RealmSwift', :git => 'http://github.com/realm/realm-cocoa.git', :branch => 'swift-2.0'
 end
