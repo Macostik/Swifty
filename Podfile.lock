@@ -1,48 +1,23 @@
 PODS:
-  - Alamofire (3.4.1)
-  - Alamofire-SwiftyJSON (3.0.0)
-  - Realm (0.103.0):
-    - Realm/Headers (= 0.103.0)
-  - Realm/Headers (0.103.0)
-  - RealmSwift (0.103.0):
-    - Realm (= 0.103.0)
+  - Alamofire (4.2.0)
+  - Realm (2.1.0):
+    - Realm/Headers (= 2.1.0)
+  - Realm/Headers (2.1.0)
+  - RealmSwift (2.1.0):
+    - Realm (= 2.1.0)
   - SwiftyJSON (2.3.2)
 
 DEPENDENCIES:
-  - Alamofire (~> 3.0)
-  - Alamofire-SwiftyJSON (from `https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec`)
-  - Realm (from `http://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
-  - RealmSwift (from `http://github.com/realm/realm-cocoa.git`, branch `swift-2.0`)
+  - Alamofire (~> 4.0)
+  - RealmSwift
   - SwiftyJSON
 
-EXTERNAL SOURCES:
-  Alamofire-SwiftyJSON:
-    :podspec: https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec
-  Realm:
-    :branch: swift-2.0
-    :git: http://github.com/realm/realm-cocoa.git
-  RealmSwift:
-    :branch: swift-2.0
-    :git: http://github.com/realm/realm-cocoa.git
-
-CHECKOUT OPTIONS:
-  Alamofire-SwiftyJSON:
-    :commit: 8cb1e134b28efef6d29a8f1682acbb850b7f8630
-    :git: https://github.com/jregnauld/Alamofire-SwiftyJSON.git
-  Realm:
-    :commit: 4c376cfb59e2563b32be9d3cae4f0aeaff5d6271
-    :git: http://github.com/realm/realm-cocoa.git
-  RealmSwift:
-    :commit: 4c376cfb59e2563b32be9d3cae4f0aeaff5d6271
-    :git: http://github.com/realm/realm-cocoa.git
-
 SPEC CHECKSUMS:
-  Alamofire: 01a82e2f6c0f860ade35534c8dd88be61bdef40c
-  Alamofire-SwiftyJSON: 01127779f4bd2d4d5e7b41d8d37488efba0e6185
-  Realm: 99c44c3a9e075638478d4134e28d9026a6de07c4
-  RealmSwift: daaa1789eb581f2f8c2a05a25f463a6f70df5a5f
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Realm: bc829ad0ef3d4eea70c34cfcc3b1704d18d50df1
+  RealmSwift: a4d4abbf0088c337cab5b738054395842e4b3052
   SwiftyJSON: 04ccea08915aa0109039157c7974cf0298da292a
 
-PODFILE CHECKSUM: 401baff5b176968710d1cae314e144ef76567b1c
+PODFILE CHECKSUM: 75e4fbb2622d48849880eb352a3eb0d35bc47692
 
-COCOAPODS: 1.0.1
+COCOAPODS: 1.2.0

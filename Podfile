@@ -1,11 +1,9 @@
 use_frameworks!
 
 target 'AlamofirePlayground' do
-pod 'Alamofire', '~> 3.0'
-pod 'SwiftyJSON'
-pod 'Alamofire-SwiftyJSON', :podspec => 'https://raw.githubusercontent.com/pdutourgeerling/Alamofire-SwiftyJSON-Podspec/master/Alamofire3-SwiftyJSON.podspec'
-pod 'Realm', :git => 'http://github.com/realm/realm-cocoa.git', :branch => 'swift-2.0'
-pod 'RealmSwift', :git => 'http://github.com/realm/realm-cocoa.git', :branch => 'swift-2.0'
+    pod 'RealmSwift'
+    pod 'Alamofire', '~> 4.0'
+    pod 'SwiftyJSON'
 end
 
 post_install do |installer|
