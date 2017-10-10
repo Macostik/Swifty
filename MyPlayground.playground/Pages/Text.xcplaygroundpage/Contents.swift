@@ -10,19 +10,18 @@ let c = false
 let z = a && b || c
 
 let s = "Yura"
-let data = s.dataUsingEncoding(NSUTF8StringEncoding)
-let s1 = String(data: data!, encoding: NSUTF8StringEncoding)
+let data = s.data(using: .utf8)
+let s1 = String(data: data!, encoding: .utf8)
 
 let string = "This_ is simple. string"
-if let startIndex = string.rangeOfString("_", options: .CaseInsensitiveSearch, range: nil, locale: nil)?.startIndex {
-    if let endIndex = string.rangeOfString(".", options: .CaseInsensitiveSearch, range: nil, locale: nil)?.startIndex where endIndex > startIndex {
+if let startIndex = string.range(of: "_", options: .caseInsensitive)?.lowerBound {
+    if let endIndex = string.range(of: ".", options: .caseInsensitive)?.upperBound, endIndex > startIndex {
         let subString = string[Range(startIndex ..< endIndex)]
     }
 }
 
 let label = UILabel()
 label.font = UIFont(name: "AvenirNext-Medium", size: 12.0)
-
 
 
 

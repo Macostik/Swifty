@@ -21,7 +21,7 @@
 		56C47F851CEDDF75001BBF2C /* POP_2.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = POP_2.playground; sourceTree = "<group>"; };
 		56C47F861CEDDF75001BBF2C /* Swift Standard Library.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift Standard Library.playground"; sourceTree = "<group>"; };
 		5CC08D527B5BB16A9C5AAD1A /* Pods-AlamofirePlayground.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlamofirePlayground.release.xcconfig"; path = "Pods/Target Support Files/Pods-AlamofirePlayground/Pods-AlamofirePlayground.release.xcconfig"; sourceTree = "<group>"; };
-		B979D0D4FF53F6C3437C9BC8 /* Alamofire.playground */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.playground; path = Alamofire.playground; sourceTree = "<group>"; };
+		B979D0D4FF53F6C3437C9BC8 /* Alamofire.playground */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.playground; path = Alamofire.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

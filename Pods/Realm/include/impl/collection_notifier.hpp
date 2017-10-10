@@ -50,19 +50,10 @@ struct TransactionChangeInfo {
     std::vector<bool> table_moves_needed;
     std::vector<ListChangeInfo> lists;
     std::vector<CollectionChangeBuilder> tables;
-    bool track_all = false;
-
-#if __GNUC__ < 5
-    // GCC 4.9 does not support C++14 braced-init with NSDMIs
-    TransactionChangeInfo() {}
-    TransactionChangeInfo(std::vector<bool> table_modifications_needed,
-                          std::vector<bool> table_moves_needed,
-                          std::vector<ListChangeInfo> lists)
-    : table_modifications_needed(std::move(table_modifications_needed)),
-      table_moves_needed(std::move(table_moves_needed)),
-      lists(std::move(lists))
-    {}
-#endif
+    std::vector<std::vector<size_t>> column_indices;
+    std::vector<size_t> table_indices;
+    bool track_all;
+    bool schema_changed;
 };
 
 class DeepChangeChecker {
@@ -99,7 +90,7 @@ private:
         size_t col;
         bool depth_exceeded;
     };
-    std::array<Path, 16> m_current_path;
+    std::array<Path, 4> m_current_path;
 
     bool check_row(Table const& table, size_t row_ndx, size_t depth = 0);
     bool check_outgoing_links(size_t table_ndx, Table const& table,
@@ -275,7 +266,14 @@ public:
     Handle& operator=(Handle&& other)
     {
         reset();
-        std::shared_ptr<T>::shared_ptr::operator=(std::move(other));
+        std::shared_ptr<T>::operator=(std::move(other));
+        return *this;
+    }
+
+    Handle& operator=(std::shared_ptr<T>&& other)
+    {
+        reset();
+        std::shared_ptr<T>::operator=(std::move(other));
         return *this;
     }
 
@@ -314,6 +312,8 @@ public:
     void deliver(SharedGroup& sg);
     // Send the after-change notifications
     void after_advance();
+
+    void add_notifier(std::shared_ptr<CollectionNotifier> notifier);
 
 private:
     util::Optional<VersionID> m_version;
