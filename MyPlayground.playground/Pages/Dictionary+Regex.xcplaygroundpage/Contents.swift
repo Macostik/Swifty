@@ -16,7 +16,7 @@ extension Dictionary where Key: Stringable {
         let regex = try! NSRegularExpression(pattern: string.string, options: [])
         return filter({ (key: Stringable, value: Value) -> Bool in
             let nskey = key.string as NSString
-            return regex.firstMatchInString(key.string, options: [], range: NSRange(location: 0, length: nskey.length)) != nil
+            return regex.firstMatch(in: key.string, options: [], range: NSRange(location: 0, length: nskey.length)) != nil
         }).map({ $0.1 })
     }
 }
